@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fenix&family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fenix&family=Poppins:wght@100;200;300;400;500&family=Pushster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Piedra&display=swap");
+/* 
+font-family: 'Fenix', serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Pushster', cursive;
+font-family: 'Noto Sans', sans-serif;
+*/
+:root {
+	--blur-color: black;
+}
+
+/** VIEWPORT **/
+.container-casino {
+	background-image: linear-gradient(
+			-90deg,
+			rgba(255, 255, 255, 0) 100%,
+			var(--blur-color) 100%
+		),
+		linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, var(--blur-color)),
+		linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, var(--blur-color)),
+		linear-gradient(0deg, rgba(255, 255, 255, 0) 30%, var(--blur-color)),
+		url(/assets/img/bg-container2.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/** HEADER **/
+.header-nav {
+	position: static;
+	background: transparent;
+}
+.logo-casino {
+	width: 60px;
+	height: 60px;
+}
+
+.text-gradient {
+	font-size: 60px;
+	text-align: center;
+	font-family: "Piedra", cursive;
+	background: #b8e1fc;
+	background: radial-gradient(
+		circle farthest-corner at center center,
+		wheat 0%,
+		rgba(197, 51, 38, 0.705) 100%
+	);
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/** CARDS TABLE **/
+.card-board {
+	background: rgba(2, 60, 26, 0.678);
+	border: 7px solid rgba(68, 30, 7, 0.9);
+	padding: 10px;
+	filter: saturate(1);
+}
+
+.game-container {
+	margin-top: 5px !important;
+}
+
+.player-card,
+.cpu-card {
+	width: 195px;
+	filter: sepia();
+}
+
+/** TITTLES **/
+.score-player,
+.score-cpu,
+.h4-tittle {
+	margin: 10px;
+	font-size: 40px;
+	font-family: "Piedra", cursive;
+	color: wheat;
+}
+
+.score-player,
+.score-cpu {
+	color: rgba(197, 51, 38, 0.705);
+}
+
+/** BUTTONS **/
+
+.buttons-styles button {
+	font-size: 20px;
+	border: none;
+	padding: 5px 20px;
+	font-family: "Piedra", cursive;
+}
+
+.buttons-styles-new {
+	background: rgba(197, 51, 38, 0.705);
+	border-radius: 8px 0 0 8px;
+	color: wheat;
+}
+
+.buttons-styles-ask {
+	background: rgba(2, 100, 40, 0.705);
+	color: wheat;
+}
+
+.buttons-styles-stop {
+	background: rgb(68, 30, 7, 0.705);
+	border-radius: 0 8px 8px 0;
+	color: wheat;
+}
+
+.buttons-styles-new:hover {
+	background: red;
+	filter: brightness(150%);
+	transition: 0.3s ease-in;
+	transform: scale(1.1);
+}
+
+.buttons-styles-ask:hover {
+	background: rgba(2, 100, 40);
+	filter: brightness(150%);
+	transition: 0.3s ease-in;
+	transform: scale(1.1);
+}
+
+.buttons-styles-stop:hover {
+	background: rgb(68, 30, 7);
+	filter: brightness(150%);
+	transition: 0.3s ease-in;
+	transform: scale(1.1);
+}
