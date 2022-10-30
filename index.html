@@ -23,13 +23,16 @@
 						<!--Header-->
 						<div
 							class="col-12 px-3 m-auto d-flex justify-content-center alig-items-center header-nav"
+							id="divHeader"
 						>
 							<img
 								src="/assets/img/images.png"
 								class="my-auto logo-casino d-none d-md-block"
 								alt="logo"
 							/>
-							<h1 class="my-auto mx-3 text-gradient">Welcome to BlackJack</h1>
+							<h1 class="my-auto mx-3 text-gradient tittle">
+								Welcome to BlackJack
+							</h1>
 						</div>
 						<!--Board-->
 						<div class="col-10 m-auto game-container">
@@ -37,11 +40,26 @@
 								<!--Buttons-->
 								<div
 									class="col-6 m-auto d-flex justify-content-center buttons-styles"
+									id="divBotones"
 								>
-									<button type="submit" class="buttons-styles-new">New</button>
-									<button type="submit" class="buttons-styles-ask">
+									<button
+										id="btnNuevo"
+										type="submit"
+										class="buttons-styles-new"
+									>
+										New
+									</button>
+									<button
+										id="btnPedir"
+										type="submit"
+										class="buttons-styles-ask"
+									>
 										Ask Card</button
-									><button type="submit" class="buttons-styles-stop">
+									><button
+										id="btnDetener"
+										type="submit"
+										class="buttons-styles-stop"
+									>
 										Stop
 									</button>
 								</div>
@@ -50,64 +68,36 @@
 									class="col-10 m-auto d-flex justify-content-start align-items-center"
 								>
 									<h4 class="h4-tittle">Player</h4>
-									<span class="score-player">0</span>
+									<small id="spanJugador" class="score-player">0</small>
 								</div>
 								<!--Player Cards-->
 								<div
 									class="col-10 m-auto d-flex align-items-center rounded-5 card-board"
 									id="player-cards"
 								>
-									<img
+									<!-- <img
 										src="/assets/cartas/AH.png"
 										alt="card"
-										class="player-card"
-									/>
-									<img
-										src="/assets/cartas/AD.png"
-										alt="card"
-										class="player-card"
-									/><img
-										src="/assets/cartas/AC.png"
-										alt="card"
-										class="player-card"
-									/>
-									<img
-										src="/assets/cartas/AS.png"
-										alt="card"
-										class="player-card"
-									/>
+										class="player-card img-fluid"
+									/> -->
 								</div>
 								<!--CPU Tittle & Score-->
 								<div
 									class="col-10 m-auto d-flex justify-content-start align-items-center"
 								>
 									<h4 class="h4-tittle">CPU</h4>
-									<span class="score-player">0</span>
+									<small class="score-player">0</small>
 								</div>
 								<!--CPU Cards-->
 								<div
-									class="col-10 m-auto d-flex rounded-5 card-board align-items-center"
+									class="col-10 m-auto d-flex align-items-center rounded-5 card-board"
 									id="cpu-cards"
 								>
-									<img
+									<!-- <img
 										src="/assets/cartas/AH.png"
 										alt="card"
 										class="player-card"
-									/>
-									<img
-										src="/assets/cartas/AD.png"
-										alt="card"
-										class="player-card"
-									/><img
-										src="/assets/cartas/AC.png"
-										alt="card"
-										class="player-card"
-									/>
-									<img
-										src="/assets/cartas/AS.png"
-										alt="card"
-										class="player-card"
-									/>
+									/> -->
 								</div>
 							</div>
 						</div>
@@ -121,6 +111,8 @@
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"
 		></script>
+		<!--Underscore Library-->
+		<script src="/assets/js/underscore-min.js"></script>
 		<!--Game-->
 		<script src="/assets/js/game.js"></script>
 	</body>

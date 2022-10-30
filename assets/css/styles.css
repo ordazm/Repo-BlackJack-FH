@@ -58,6 +58,7 @@ font-family: 'Noto Sans', sans-serif;
 	border: 7px solid rgba(68, 30, 7, 0.9);
 	padding: 10px;
 	filter: saturate(1);
+	height: 35.3vh;
 }
 
 .game-container {
@@ -66,7 +67,7 @@ font-family: 'Noto Sans', sans-serif;
 
 .player-card,
 .cpu-card {
-	width: 195px;
+	max-width: 160px;
 	position: relative;
 	left: 150px;
 	margin-left: -90px;
