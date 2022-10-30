@@ -67,10 +67,9 @@ font-family: 'Noto Sans', sans-serif;
 
 .player-card,
 .cpu-card {
-	max-width: 160px;
 	position: relative;
-	left: 150px;
-	margin-left: -90px;
+	left: 5em;
+	margin-left: -5em;
 }
 
 /** TITTLES **/
