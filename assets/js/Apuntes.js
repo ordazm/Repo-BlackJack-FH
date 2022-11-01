@@ -77,3 +77,14 @@ btnPedir.addEventListener("click", () => {
 	//console.log(carta);
 	//console.log(puntosJugador);
 });
+
+/**
+ * * DOM CLASE 62 - Patron Modulo */
+
+//Funciones anonimas auto invocadas (flecha)
+(() => {
+	"use strict";
+})();
+
+//Funciones anonimas auto invocadas (tradicional)
+(function () {})();

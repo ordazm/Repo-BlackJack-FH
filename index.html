@@ -30,9 +30,7 @@
 								class="my-auto logo-casino d-none d-md-block"
 								alt="logo"
 							/>
-							<h2 class="my-auto mx-3 text-gradient tittle">
-								Welcome to BlackJack
-							</h2>
+							<h2 class="my-auto mx-3 mb-2 text-gradient tittle">BlackJack</h2>
 						</div>
 						<!--Board-->
 						<div class="col-10 m-auto game-container">
@@ -52,12 +50,14 @@
 									<button
 										id="btnPedir"
 										type="submit"
+										disabled="disabled"
 										class="buttons-styles-ask"
 									>
 										Ask Card</button
 									><button
 										id="btnDetener"
 										type="submit"
+										disabled="disabled"
 										class="buttons-styles-stop"
 									>
 										Stop
@@ -72,7 +72,7 @@
 								</div>
 								<!--Player Cards-->
 								<div
-									class="col-sm-11 col-md-10 m-auto d-flex align-items-center rounded-5 card-board"
+									class="col-sm-11 col-md-10 m-auto d-flex align-items-center rounded-5 card-board divCartas"
 									id="player-cards"
 								>
 									<!-- <img
@@ -90,7 +90,7 @@
 								</div>
 								<!--CPU Cards-->
 								<div
-									class="col-sm-11 col-md-10 m-auto d-flex align-items-center rounded-5 card-board"
+									class="col-sm-11 col-md-10 m-auto d-flex align-items-center rounded-5 card-board divCartas"
 									id="cpu-cards"
 								>
 									<!-- <img
@@ -114,6 +114,13 @@
 		<!--Underscore Library-->
 		<script src="/assets/js/underscore-min.js"></script>
 		<!--Game-->
-		<script src="/assets/js/game.js"></script>
+		<script src="/assets/js/game-version-2.js"></script>
+		<script>
+			// inicializarJuego();
+			console.log(miModulo);
+			document.querySelector("#btnNuevo").addEventListener("click", () => {
+				miModulo.nuevoJuego();
+			});
+		</script>
 	</body>
 </html>
