@@ -18,7 +18,7 @@
 	<body>
 		<div class="container-fluid container-casino">
 			<div class="row">
-				<div class="col-12 m-auto justify-content-center alig-items-center">
+				<div class="col-11 m-auto justify-content-center alig-items-center">
 					<div class="row">
 						<!--Header-->
 						<div
@@ -33,7 +33,7 @@
 							<h2 class="my-auto mx-3 mb-2 text-gradient tittle">BlackJack</h2>
 						</div>
 						<!--Board-->
-						<div class="col-10 m-auto game-container">
+						<div class="col-10 justify-content-center m-auto game-container">
 							<div class="row">
 								<!--Buttons-->
 								<div
@@ -83,14 +83,14 @@
 								</div>
 								<!--CPU Tittle & Score-->
 								<div
-									class="col-sm-11 col-md-10 m-auto d-flex justify-content-start align-items-center"
+									class="col-sm-10 col-md-10 m-auto d-flex justify-content-start align-items-center"
 								>
 									<h3 class="h4-tittle">CPU</h3>
 									<small class="score-player">0</small>
 								</div>
 								<!--CPU Cards-->
 								<div
-									class="col-sm-11 col-md-10 m-auto d-flex align-items-center rounded-5 card-board divCartas"
+									class="col-sm-10 col-md-10 m-auto d-flex align-items-center rounded-5 card-board divCartas"
 									id="cpu-cards"
 								>
 									<!-- <img
@@ -114,9 +114,8 @@
 		<!--Underscore Library-->
 		<script src="/assets/js/underscore-min.js"></script>
 		<!--Game-->
-		<script src="/assets/js/game-version-2.js"></script>
+		<script src="/assets/js/game-final-minified.js"></script>
 		<script>
-			// inicializarJuego();
 			console.log(miModulo);
 			document.querySelector("#btnNuevo").addEventListener("click", () => {
 				miModulo.nuevoJuego();
